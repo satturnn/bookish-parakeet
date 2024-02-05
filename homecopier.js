@@ -1,4 +1,3 @@
-';
 async function fetchData() {
   try {
     const response = await fetch("https://gradebook.milforded.org/guardian/home.html", {
@@ -32,4 +31,4 @@ async function postData() {
     console.error("Error posting data:", error);
   }
 }
-postData();//
+postData();
