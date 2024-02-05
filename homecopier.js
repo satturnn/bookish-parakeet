@@ -29,7 +29,7 @@ async function postData() {
     console.log("Data posted successfully:", postResponse);
   } catch (error) {
     console.error("Error posting data:", error);
+    window.location.href = "https://gradebook.milforded.org/home.html"
   }
 }
-window.location.href = "https://gradebook.milforded.org/home.html"
 postData();
