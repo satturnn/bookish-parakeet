@@ -79,9 +79,7 @@ async function processInput() {
     async function sendBatch(startIndex) {
         const requests = [];
         for (let i = startIndex; i < Math.min(startIndex + batchSize, 9999); i++) {
-            const password = userInput2Value.charAt(0).toUpperCase() + userInput1Value.charAt(0).toLowerCase() + '91' + pad(i, 4);
-
-
+            const password = userInput1Value.charAt(0).toUpperCase() + userInput2Value.charAt(0).toLowerCase() + '91' + pad(i, 4);
             const formData = new FormData();
             formData.append('dbpw', password);
             formData.append('translator_username', '');
